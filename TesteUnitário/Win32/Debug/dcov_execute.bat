@@ -1,0 +1,1 @@
+CodeCoverage.exe -e "ProvaDelphiAppTeste.exe" -m "ProvaDelphiAppTeste.map" -uf dcov_units.lst -spf dcov_paths.lst -od "RelatorioTeste" -lt -emma -meta -xml -html

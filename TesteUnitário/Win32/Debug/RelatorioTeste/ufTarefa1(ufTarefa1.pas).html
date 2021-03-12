@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>Delphi CodeCoverage Coverage Report</title>
+<style type="text/css">
+table {border-spacing:0; border-collapse:collapse;}
+table, td, th {border: 1px solid black;}
+td, th {background: white; margin: 0; padding: 2px 0.5em 2px 0.5em}
+td {border-width: 0 1px 0 0;}
+th {border-width: 1px 1px 1px 0;}
+p, h1, h2, h3, th {font-family: verdana,arial,sans-serif; font-size: 10pt;}
+td {font-family: courier,monospace; font-size: 10pt;}
+th {background: #CCCCCC;}
+table.o tr td:nth-child(1) {font-weight: bold;}
+table.o tr td:nth-child(2) {text-align: right;}
+table.o tr td {border-width: 1px;}
+table.s {width: 100%;}
+table.s tr td {padding: 0 0.25em 0 0.25em;}
+table.s tr td:first-child {text-align: right; font-weight: bold;}
+table.s tr.notcovered td {background: #DDDDFF;}
+table.s tr.nocodegen td {background: #FFFFEE;}
+table.s tr.covered td {background: #CCFFCC;}
+table.s tr.covered td:first-child {color: green;}
+table.s {border-width: 1px 0 1px 1px;}
+table.sum tr td {border-width: 1px;}
+table.sum tr th {text-align:right;}
+table.sum tr th:first-child {text-align:center;}
+table.sum tr td {text-align:right;}
+table.sum tr td:first-child {text-align:left;}
+</style>
+</head>
+<body>
+<p>Coverage report for <strong>ufTarefa1 (C:\Users\alexm\OneDrive\Documentos\ProvaDelphiApp\View\ufTarefa1.pas)</strong>.</p>
+<p> Generated at 12/03/2021 11:53:34 by <a href="https://sourceforge.net/projects/delphicodecoverage/" title="Code Coverage for Delphi 5+">DelphiCodeCoverage</a> - an open source tool for Delphi Code Coverage.</p>
+<p> Statistics for C:\Users\alexm\OneDrive\Documentos\ProvaDelphiApp\View\ufTarefa1.pas </p>
+<table  class="o"><tr><td>Number of lines covered</td><td>0</td></tr><tr><td>Number of lines with code gen</td><td>20</td></tr><tr><td>Line coverage</td><td>0%</td></tr></table>
+<br /><br />
+<table  class="s">
+<tr class="nocodegen"><td>1</td><td><pre style="display:inline;">unit ufTarefa1;</pre></td></tr>
+<tr class="nocodegen"><td>2</td><td><pre style="display:inline;"></pre></td></tr>
+<tr class="nocodegen"><td>3</td><td><pre style="display:inline;">interface</pre></td></tr>
+<tr class="nocodegen"><td>4</td><td><pre style="display:inline;"></pre></td></tr>
+<tr class="nocodegen"><td>5</td><td><pre style="display:inline;">uses</pre></td></tr>
+<tr class="nocodegen"><td>6</td><td><pre style="display:inline;">  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,</pre></td></tr>
+<tr class="nocodegen"><td>7</td><td><pre style="display:inline;">  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls,</pre></td></tr>
+<tr class="nocodegen"><td>8</td><td><pre style="display:inline;">  uspQuery, FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Param,</pre></td></tr>
+<tr class="nocodegen"><td>9</td><td><pre style="display:inline;">  FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf,</pre></td></tr>
+<tr class="nocodegen"><td>10</td><td><pre style="display:inline;">  FireDAC.Stan.Async, FireDAC.DApt, Data.DB, FireDAC.Comp.DataSet,</pre></td></tr>
+<tr class="nocodegen"><td>11</td><td><pre style="display:inline;">  FireDAC.Comp.Client;</pre></td></tr>
+<tr class="nocodegen"><td>12</td><td><pre style="display:inline;"></pre></td></tr>
+<tr class="nocodegen"><td>13</td><td><pre style="display:inline;">type</pre></td></tr>
+<tr class="nocodegen"><td>14</td><td><pre style="display:inline;">  TfrmTarefa1 = class(TForm)</pre></td></tr>
+<tr class="nocodegen"><td>15</td><td><pre style="display:inline;">    pnPrincipal: TPanel;</pre></td></tr>
+<tr class="nocodegen"><td>16</td><td><pre style="display:inline;">    pnSQLGerado: TPanel;</pre></td></tr>
+<tr class="nocodegen"><td>17</td><td><pre style="display:inline;">    pnSuperior: TPanel;</pre></td></tr>
+<tr class="nocodegen"><td>18</td><td><pre style="display:inline;">    pnColunas: TPanel;</pre></td></tr>
+<tr class="nocodegen"><td>19</td><td><pre style="display:inline;">    pnTabelas: TPanel;</pre></td></tr>
+<tr class="nocodegen"><td>20</td><td><pre style="display:inline;">    pnGeraSQL: TPanel;</pre></td></tr>
+<tr class="nocodegen"><td>21</td><td><pre style="display:inline;">    mColunas: TMemo;</pre></td></tr>
+<tr class="nocodegen"><td>22</td><td><pre style="display:inline;">    lblColunas: TLabel;</pre></td></tr>
+<tr class="nocodegen"><td>23</td><td><pre style="display:inline;">    mTabelas: TMemo;</pre></td></tr>
+<tr class="nocodegen"><td>24</td><td><pre style="display:inline;">    lblTabelas: TLabel;</pre></td></tr>
+<tr class="nocodegen"><td>25</td><td><pre style="display:inline;">    pnCondicoes: TPanel;</pre></td></tr>
+<tr class="nocodegen"><td>26</td><td><pre style="display:inline;">    lblCondicoes: TLabel;</pre></td></tr>
+<tr class="nocodegen"><td>27</td><td><pre style="display:inline;">    mCondicoes: TMemo;</pre></td></tr>
+<tr class="nocodegen"><td>28</td><td><pre style="display:inline;">    btnGeraSQL: TButton;</pre></td></tr>
+<tr class="nocodegen"><td>29</td><td><pre style="display:inline;">    mSQLGerado: TMemo;</pre></td></tr>
+<tr class="nocodegen"><td>30</td><td><pre style="display:inline;">    lblSQLGerado: TLabel;</pre></td></tr>
+<tr class="nocodegen"><td>31</td><td><pre style="display:inline;">    spQuery1: TspQuery;</pre></td></tr>
+<tr class="nocodegen"><td>32</td><td><pre style="display:inline;">    procedure FormClose(Sender: TObject; var Action: TCloseAction);</pre></td></tr>
+<tr class="nocodegen"><td>33</td><td><pre style="display:inline;">    procedure btnGeraSQLClick(Sender: TObject);</pre></td></tr>
+<tr class="nocodegen"><td>34</td><td><pre style="display:inline;">    procedure FormShow(Sender: TObject);</pre></td></tr>
+<tr class="nocodegen"><td>35</td><td><pre style="display:inline;">  private</pre></td></tr>
+<tr class="nocodegen"><td>36</td><td><pre style="display:inline;">    { Private declarations }</pre></td></tr>
+<tr class="nocodegen"><td>37</td><td><pre style="display:inline;">    function GeraSQL: String;</pre></td></tr>
+<tr class="nocodegen"><td>38</td><td><pre style="display:inline;">  public</pre></td></tr>
+<tr class="nocodegen"><td>39</td><td><pre style="display:inline;">    { Public declarations }</pre></td></tr>
+<tr class="nocodegen"><td>40</td><td><pre style="display:inline;">  end;</pre></td></tr>
+<tr class="nocodegen"><td>41</td><td><pre style="display:inline;"></pre></td></tr>
+<tr class="nocodegen"><td>42</td><td><pre style="display:inline;">var</pre></td></tr>
+<tr class="nocodegen"><td>43</td><td><pre style="display:inline;">  frmTarefa1: TfrmTarefa1;</pre></td></tr>
+<tr class="nocodegen"><td>44</td><td><pre style="display:inline;"></pre></td></tr>
+<tr class="nocodegen"><td>45</td><td><pre style="display:inline;">implementation</pre></td></tr>
+<tr class="nocodegen"><td>46</td><td><pre style="display:inline;"></pre></td></tr>
+<tr class="nocodegen"><td>47</td><td><pre style="display:inline;">{$R *.dfm}</pre></td></tr>
+<tr class="nocodegen"><td>48</td><td><pre style="display:inline;"></pre></td></tr>
+<tr class="nocodegen"><td>49</td><td><pre style="display:inline;">procedure TfrmTarefa1.btnGeraSQLClick(Sender: TObject);</pre></td></tr>
+<tr class="notcovered"><td>50</td><td><pre style="display:inline;">begin</pre></td></tr>
+<tr class="notcovered"><td>51</td><td><pre style="display:inline;">  mSQLGerado.Lines.Text := GeraSQL;</pre></td></tr>
+<tr class="notcovered"><td>52</td><td><pre style="display:inline;">end;</pre></td></tr>
+<tr class="nocodegen"><td>53</td><td><pre style="display:inline;"></pre></td></tr>
+<tr class="nocodegen"><td>54</td><td><pre style="display:inline;">procedure TfrmTarefa1.FormClose(Sender: TObject; var Action: TCloseAction);</pre></td></tr>
+<tr class="notcovered"><td>55</td><td><pre style="display:inline;">begin</pre></td></tr>
+<tr class="notcovered"><td>56</td><td><pre style="display:inline;">  Action := caFree;</pre></td></tr>
+<tr class="notcovered"><td>57</td><td><pre style="display:inline;">  frmTarefa1 := nil;</pre></td></tr>
+<tr class="notcovered"><td>58</td><td><pre style="display:inline;">end;</pre></td></tr>
+<tr class="nocodegen"><td>59</td><td><pre style="display:inline;"></pre></td></tr>
+<tr class="nocodegen"><td>60</td><td><pre style="display:inline;">procedure TfrmTarefa1.FormShow(Sender: TObject);</pre></td></tr>
+<tr class="notcovered"><td>61</td><td><pre style="display:inline;">begin</pre></td></tr>
+<tr class="notcovered"><td>62</td><td><pre style="display:inline;">  mColunas.SetFocus;</pre></td></tr>
+<tr class="notcovered"><td>63</td><td><pre style="display:inline;">end;</pre></td></tr>
+<tr class="nocodegen"><td>64</td><td><pre style="display:inline;"></pre></td></tr>
+<tr class="nocodegen"><td>65</td><td><pre style="display:inline;">function TfrmTarefa1.GeraSQL: String;</pre></td></tr>
+<tr class="nocodegen"><td>66</td><td><pre style="display:inline;">var</pre></td></tr>
+<tr class="nocodegen"><td>67</td><td><pre style="display:inline;">  LColunas,</pre></td></tr>
+<tr class="nocodegen"><td>68</td><td><pre style="display:inline;">  LTabelas,</pre></td></tr>
+<tr class="nocodegen"><td>69</td><td><pre style="display:inline;">  LCondicoes: TArray&lt;String&gt;;</pre></td></tr>
+<tr class="notcovered"><td>70</td><td><pre style="display:inline;">begin</pre></td></tr>
+<tr class="notcovered"><td>71</td><td><pre style="display:inline;">  LColunas := mColunas.Lines.ToStringArray;</pre></td></tr>
+<tr class="notcovered"><td>72</td><td><pre style="display:inline;">  LTabelas := mTabelas.Lines.ToStringArray;</pre></td></tr>
+<tr class="notcovered"><td>73</td><td><pre style="display:inline;">  LCondicoes := mCondicoes.Lines.ToStringArray;</pre></td></tr>
+<tr class="nocodegen"><td>74</td><td><pre style="display:inline;"></pre></td></tr>
+<tr class="notcovered"><td>75</td><td><pre style="display:inline;">  spQuery1.spColunas.AddStrings(LColunas);</pre></td></tr>
+<tr class="notcovered"><td>76</td><td><pre style="display:inline;">  spQuery1.spTabelas.AddStrings(LTabelas);</pre></td></tr>
+<tr class="notcovered"><td>77</td><td><pre style="display:inline;">  spQuery1.spCondicoes.AddStrings(Lcondicoes);</pre></td></tr>
+<tr class="nocodegen"><td>78</td><td><pre style="display:inline;"></pre></td></tr>
+<tr class="notcovered"><td>79</td><td><pre style="display:inline;">  spQuery1.GeraSQL;</pre></td></tr>
+<tr class="notcovered"><td>80</td><td><pre style="display:inline;">  Result := spQuery1.SQL;</pre></td></tr>
+<tr class="notcovered"><td>81</td><td><pre style="display:inline;">end;</pre></td></tr>
+<tr class="nocodegen"><td>82</td><td><pre style="display:inline;"></pre></td></tr>
+<tr class="nocodegen"><td>83</td><td><pre style="display:inline;">end.</pre></td></tr>
+</table>
+</body>
+</html>
